@@ -11,7 +11,7 @@ export const StyledCard = styled(
   flex-direction: row;
   gap: 1rem;
   padding: 0.3rem 0.9rem;
-  `;
+`;
 
 export const StyledTitleFlexItem = styled((props) => (
   <SectionSubheading {...props} />
