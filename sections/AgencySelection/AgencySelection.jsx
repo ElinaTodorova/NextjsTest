@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-import { Cart } from "../../collections/Card/Card.jsx";
+import { Card } from "../../collections/Card/Card.jsx";
 import {
   StyledTextContainer,
   StyledContainer,
@@ -9,7 +9,8 @@ import {
   StyledBackgroundContainer,
   StyledFlexContainer,
   StyledImageContainer,
-  StyledFlexItem
+  StyledFlexItem,
+  StyledImgContainer
 } from "./element";
 
 export const AgencySelection = ({ video, ...data }) => {
@@ -32,10 +33,11 @@ export const AgencySelection = ({ video, ...data }) => {
         </StyledImageContainer>
         <StyledFlexItem>
           {data.cards.map((card) => (
-            <Cart cardData={card} key={card.id} />
+            <Card {...card} icon={card.icon} key={card.id} />
           ))}
         </StyledFlexItem>
       </StyledFlexContainer>
+      
     </StyledContainer>
   );
 };

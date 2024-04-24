@@ -21,7 +21,7 @@ const data = {
     },
     {
       id: 2,
-      icon: { src: "/img/search-icon.png", alt: "", width: 60, height: 100 },
+      icon: { src: "/img/search-icon.png", alt: "", width: "3rem", height: "3rem" },
       title: "Search",
       content:
         "In-depth agency search covering; criteria matching, door knocking and due-dilligence vetting.",
