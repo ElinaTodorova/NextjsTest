@@ -10,7 +10,6 @@ import {
   StyledFlexContainer,
   StyledImageContainer,
   StyledFlexItem,
-  StyledImgContainer
 } from "./element";
 
 export const AgencySelection = ({ video, ...data }) => {
@@ -32,12 +31,11 @@ export const AgencySelection = ({ video, ...data }) => {
           />
         </StyledImageContainer>
         <StyledFlexItem>
-          {data.cards.map((card) => (
-            <Card {...card} icon={card.icon} key={card.id} />
+          {data.cards.map((card, index) => (
+            <Card {...card} icon={card.icon} index={index} key={card.id} />
           ))}
         </StyledFlexItem>
       </StyledFlexContainer>
-      
     </StyledContainer>
   );
 };
