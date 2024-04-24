@@ -2,21 +2,23 @@
 import Image from "next/image";
 
 import { SectionParagraph } from "../../components/Typography/SectionParagraph.jsx";
-import { StyledCard, StyledTitleFlexItem, StyledInfoContainer } from "./elements.jsx";
+import { StyledCard, StyledTitleFlexItem, StyledInfoContainer, StyledImgContainer } from "./elements.jsx";
 
-export const Cart = ({ cardData }) => {
+export const Card = ({ icon, ...card }) => {
   return (
     <StyledCard>
+        <StyledImgContainer>
        <Image
           layout="responsive"
-          src={cardData.icon.src}
-          alt={cardData.icon.alt}
-          width={cardData.icon.width}
-          height={cardData.icon.height}
+          src={icon.src}
+          alt={icon.alt}
+          width={icon.width}
+          height={icon.height}
         />
+        </StyledImgContainer>
       <StyledInfoContainer>
-        <StyledTitleFlexItem>{cardData.title}</StyledTitleFlexItem>
-        <SectionParagraph>{cardData.content}</SectionParagraph>
+        <StyledTitleFlexItem>{card.title}</StyledTitleFlexItem>
+        <SectionParagraph>{card.content}</SectionParagraph>
       </StyledInfoContainer>
     </StyledCard>
   );

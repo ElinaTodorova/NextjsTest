@@ -69,3 +69,8 @@ export const StyledFlexItem = styled.div`
   flex-direction: column;
   gap: 1.5rem;
 `;
+
+export const StyledImgContainer = styled.div`
+  width: 3.5rem;
+  height : 3.5rem;
+`;
