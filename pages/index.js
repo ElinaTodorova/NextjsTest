@@ -7,6 +7,41 @@ const heroProps = {
   ctaText: "Start",
 };
 
+const data = {
+  title: "Managed Selection Agency",
+  subtitle: "Stengthen your onboarding process",
+  cards: [
+    {
+      id: 1,
+      icon: { src: "/img/brief-icon.png", alt: "", width: "3rem", height: "3rem" },
+      title: "Brief",
+      content:
+        "Complete brief writing or simple guidance on what to include, we've got you covered",
+    },
+    {
+      id: 2,
+      icon: { src: "/img/search-icon.png", alt: "", width: 60, height: 100 },
+      title: "Search",
+      content:
+        "In-depth agency search covering; criteria matching, door knocking and due-dilligence vetting.",
+    },
+    {
+      id: 3,
+      icon: { src: "/img/pitch-icon.png", alt: "", width: "3rem", height: "3rem" },
+      title: "Pitch",
+      content:
+        "Comprehensive pitch management, including comms, diary management and pitch hosting",
+    },
+  ],
+  video: { src: "/img/video.png", alt: "", width: "20rem", height: "35rem" },
+  image: {
+    src: "/img/background.png",
+    alt: "background-img",
+    width: 500,
+    height: 400,
+  },
+}
+
 export default function Home() {
   return (
     <>
