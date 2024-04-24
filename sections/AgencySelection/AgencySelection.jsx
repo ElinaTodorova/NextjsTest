@@ -1,3 +1,4 @@
+import { Cart } from "../../collections/Card/Card.jsx";
 import {
   StyledTextContainer,
   StyledContainer,
