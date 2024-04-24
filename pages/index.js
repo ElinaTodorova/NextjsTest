@@ -9,7 +9,7 @@ const heroProps = {
 };
 
 const data = {
-  title: "Managed Selection Agency",
+  title: "Managed agency selection",
   subtitle: "Stengthen your onboarding process",
   cards: [
     {
