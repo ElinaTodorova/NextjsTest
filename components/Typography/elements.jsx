@@ -6,7 +6,11 @@ export const StyledSectionBigHeading = styled(forwardRef((props, ref) => <h1 {..
   font-family: Poppins;
   font-weight: 600;
   font-size: 3rem;
-  line-height: 3.94rem;
+  line-height: 1.5rem;
+
+  @media (min-width : 1024px) {
+    line-height: 3.94rem;
+  }
 `;
 
 export const StyledSectionHeading = styled(forwardRef((props, ref) => <h2 {...props} ref={ref} />))`
@@ -18,9 +22,14 @@ export const StyledSectionHeading = styled(forwardRef((props, ref) => <h2 {...pr
 
 export const StyledSectionSubheading = styled(forwardRef((props, ref) => <h3 {...props} ref={ref} />))`
   font-family: Poppins;
-  font-size: 1.25rem;
-  line-height: 1.875rem;
+  font-size: 1rem;
+  line-height: 1rem;
   font-weight: 300;
+
+  @media (min-width: 1024px) {
+    font-size: 1.25rem;
+    line-height: 1.875rem;
+  }
 `;
 
 export const StyledSectionInnerHeading = styled(forwardRef((props, ref) => <h4 {...props} ref={ref} />))`
@@ -40,6 +49,10 @@ export const StyledSectionTinyHeading = styled(forwardRef((props, ref) => <h5 {.
 export const StyledSectionParagraph = styled((props) => <p {...props} />)`
   font-family: Poppins;
   font-size: 1rem;
-  line-height: 1.5rem;
+  line-height: 1rem;
   font-weight: 400;
+
+  @media (min-width: 1024px) {
+    line-height: 1.5rem;
+  }
 `;
