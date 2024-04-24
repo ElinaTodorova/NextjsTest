@@ -44,3 +44,28 @@ export const StyledBackgroundContainer = styled.div`
   background-size: cover;
   background-position: center;
 `;
+
+export const StyledFlexContainer = styled.div`
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  margin-top: 2rem;
+`;
+
+export const StyledImageContainer = styled.div`
+  heigth: 35rem;
+  width : 20rem;
+  position: relative;
+  z-index: 102;
+  box-sizing: border-box;
+`;
+
+export const StyledFlexItem = styled.div`
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+`;
