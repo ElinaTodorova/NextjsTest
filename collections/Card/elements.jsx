@@ -35,3 +35,7 @@ export const StyledImgContainer = styled.div`
   width: 3.5rem;
   height: 3.5rem;
 `;
+
+export const BlueLink = styled.a`
+  color: rgb(95, 152, 226);
+  text-decoration: underline;`

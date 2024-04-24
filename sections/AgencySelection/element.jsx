@@ -101,12 +101,16 @@ export const StyledImageContainer = styled.div`
   }
 `;
 
-export const StyledFlexItem = styled.div`
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  gap: 1.5rem;
-`;
+  export const StyledFlexItem = styled.div`
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+
+    & > :nth-child(3) {
+      border : 1.5px solid rgb(95, 152, 226);
+    }
+  `;
 
 export const StyledImgContainer = styled.div`
   width: 3.5rem;
